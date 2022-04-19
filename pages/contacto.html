@@ -1,66 +1,127 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
-        <title>Revista noticias</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <title>Revista Noticias</title>
     </head>
-    <body id="grid-area"> <!-- INICIO DEL BODY -->
-        <header><!-- BANNER DE PRESENTACION -->
-            <img src="https://i0.wp.com/www.campoparatodos.com.ar/wp-content/uploads/2017/11/logo2-01-e1511578707298.png?fit=350%2C124&ssl=1" width="66%vw" alt="Contáctenos aquí">
-            <br>
+<body>
+    <main>
+        <header class="container-fluid">
+            <img src="../images/revistalogo.png" width="66%vw" alt="logo">
         </header>
-        <nav>
-            <span><a href="../index.html">Inicio</a></span>
-            <span><a href="noticias.html">Noticias</a></span>
-            <span>Revista</span>
-            <span>Quienes somos</span>
-            <span><a href="contacto.html">Contacto</a></span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="revista.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Revista
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="revista.html">Edición Marzo</a></li>
+                        <li><a class="dropdown-item" href="revista.html">Edición Febrero</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="revista.html">Ver todas las ediciones</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
         </nav>
-        <main id="noticias"> <!-- INICIO DE MAIN -->
-            <h2>Formulario de contacto</h2>
-            <form action=""> <!-- FORMULARIO DE CONTACTO -->
-                <input type="text" name="Nombre" placeholder="Ingrese nombre completo" size="50"> <br><br> 
-                <input type="email" name="Correo" placeholder="Ingrese su correo electronico" size="50"> <br><br> 
-                <select name="Motivo de contacto">
-                    <option>Motivo de contacto</option>
-                    <option>Publicaciones</option>
-                    <option>Trabajo</option>
-                    <option>Publicidad</option>
-                    <option>Observaciones de editor</option>
-                </select><br><br>
-                <textarea name="comentario" placeholder="Ingrese sus comentarios" rows="10" cols="50"></textarea> <br><br>
-
-                <!-- CONTROLES DE SELECCION -->
-                <input type="radio" name="sexo" value="Hombre"> <a>Hombre</a>
-                <input type="radio" name="sexo" value="Mujer"> <a>Mujer</a>
-                <input type="radio" name="sexo" value="na"> <a>Prefiero no decirlo</a>                    
-                <br><br>
-                <!--CHECKBOX-->
-                <input type="checkbox" name="terminos" value="1">
-                <a>Suscribirme al newsletter</a> 
-                <br><br> <!-- BOTONES -->
-                <input class="padding" type="submit" value="Enviar formulario">
-                <input class="padding" type="reset" value="Resetear formulario">
-            </form>
-            <br><br>
-            <!-- MAPA DE GOOGLE -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.8546935484983!2d-64.25986938509682!3d-27.78345108276041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5216e48679db%3A0xe0dd8b8c1e7ff622!2sAv.%20Roca%20Sur%20460%2C%20G4200%20MAM%2C%20Santiago%20del%20Estero!5e0!3m2!1ses!2sar!4v1647302508040!5m2!1ses!2sar" width="80%vw" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </main>
-       <aside> <img class="publicidad" src="https://previews.123rf.com/images/serkorkin/serkorkin1705/serkorkin170500049/79250638-mega-venta-de-descuento-vector-ilustraci%C3%B3n-de-concepto-de-dise%C3%B1o-banner-de-promoci%C3%B3n-de-publicidad-h.jpg" width="100% content-box" alt="Espacio publicitario"></aside>
-        <footer>
-            <nav id="redesSociales"><!-- REDES SOCIALES -->
-                <span><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/123/123717.png" style: width="20px"></a></span>
-                <span><a href="https://www.instagram.com/" target="_blank"><img src="https://www.pngkey.com/png/full/1-13374_instagram-icon-new-black-background-vector-logo-instagram.png" style: width="20px"></a></span>
-                <span><a href="https://www.twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" style: width="20px"></a></span>
-            </nav>
-            <!-- INFO DEVELOPER -->
-            <h5 class="developer">Desarrollado por <a href="https://www.MHwebd.org" target="_blank">MHwebd.org</a></h5>
-        </footer>
-    </body>
+        <section class="container">
+            <br>
+            <div class="row bg-dark text-white"><h1 class="fs-2">Contactanos através de todos los medios</h1></div><br>
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" id="basic-addon1">Ingrese su nombre y apellido:</label>
+                        <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Nombre y apellido" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" id="basic-addon1">Ingrese su correo electrónico:</label>
+                        <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Motivo de contacto</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Seleccione uno</option>
+                        <option value="1">Publicidad</option>
+                        <option value="2">Artículos publicados</option>
+                        <option value="3">Eventos</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Ingrese sus comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <br>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Suscribirme al newsletter</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <iframe class="padding margenes" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.8546935484983!2d-64.25986938509682!3d-27.78345108276041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5216e48679db%3A0xe0dd8b8c1e7ff622!2sAv.%20Roca%20Sur%20460%2C%20G4200%20MAM%2C%20Santiago%20del%20Estero!5e0!3m2!1ses!2sar!4v1647302508040!5m2!1ses!2sar" width="95%vw" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        <br>
+        </section>
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="blank role="button"
+              >
+            <img src="https://cdn-icons-png.flaticon.com/512/123/123717.png" alt="Facebook" style: width="20px"></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="blank role="button"
+              >
+            <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" alt="Twitter" style: width="20px"></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="blank" role="button"
+              >
+            <img src="https://www.pngkey.com/png/full/1-13374_instagram-icon-new-black-background-vector-logo-instagram.png" alt="Instagram" style: width="20px"></a>
+          </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <a class="text-white" href="https://mhwebd.org/">MHwebd.org</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+     <script src="../js/bootstrap.js"></script>
+</body>
 </html>
